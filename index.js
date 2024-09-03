@@ -15,7 +15,7 @@ app.get("/" ,async function(req,res) {
 
 mongoose
   .connect(
-    "mongodb+srv://kreupaideveloper:Vs4822btoVPknhST@cluster0.aaada.mongodb.net/"
+    "mongodb+srv://BackendUser:rUOIpCKLc0oVpmtw@clusterkreupai.imb19.mongodb.net/"
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB:", err));
@@ -91,7 +91,7 @@ app.delete("/notes/:id", async (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
